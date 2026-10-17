@@ -41,7 +41,7 @@ app.post(['/api/book-call', '/api/contact', '/contact'], (req, res) => {
   console.log('[Form Submission Received]:', req.body);
   res.json({
     success: true,
-    message: "Thank you. Our sales manager will review your message and respond personally."
+    message: "Thank you. Our front desk manager will review your reservation request and contact you shortly."
   });
 });
 
@@ -56,9 +56,9 @@ app.use((req, res, next) => {
 
 const server = app.listen(PORT, () => {
   console.log(`\n==================================================`);
-  console.log(`ERA Residence Replica running at: http://localhost:${PORT}`);
+  console.log(`Narayanam Hotel 3D Website running at: http://localhost:${PORT}`);
   console.log(`- Home:        http://localhost:${PORT}/`);
-  console.log(`- Apartments:  http://localhost:${PORT}/apartments`);
+  console.log(`- Rooms:       http://localhost:${PORT}/apartments`);
   console.log(`- Contact:     http://localhost:${PORT}/contact`);
   console.log(`==================================================\n`);
 });

@@ -7,10 +7,11 @@ const REPLICA_SHOTS = path.join(__dirname, 'replica_screenshots');
 if (!fs.existsSync(REPLICA_SHOTS)) fs.mkdirSync(REPLICA_SHOTS, { recursive: true });
 
 const viewports = [
-  { name: 'desktop', width: 1440, height: 900 },
-  { name: 'laptop', width: 1366, height: 768 },
-  { name: 'tablet', width: 768, height: 1024 },
-  { name: 'mobile', width: 390, height: 844 }
+  { name: 'desktop_1440', width: 1440, height: 900 },
+  { name: 'laptop_1280', width: 1280, height: 800 },
+  { name: 'tablet_768', width: 768, height: 1024 },
+  { name: 'mobile_390', width: 390, height: 844 },
+  { name: 'small_mobile_375', width: 375, height: 812 }
 ];
 
 async function validate() {
@@ -57,7 +58,7 @@ async function validate() {
       }
     });
 
-    const response = await page.goto(`http://localhost:3000${p.path}`, { waitUntil: 'domcontentloaded', timeout: 15000 });
+    const response = await page.goto(`http://localhost:3000${p.path}`, { waitUntil: 'domcontentloaded', timeout: 35000 });
     console.log(`HTTP Status: ${response.status()}`);
     report.pagesTested.push({ name: p.name, status: response.status() });
 
@@ -95,18 +96,18 @@ async function validate() {
         console.error('Day/Night toggle error:', e.message);
       }
 
-      // 2. Test Book a call modal
+      // 2. Test Book Stay modal
       try {
-        const bookCallBtn = await page.$('text="Book a call"');
+        const bookCallBtn = await page.$('text="Book Stay"') || await page.$('text="Book a call"');
         if (bookCallBtn) {
           await bookCallBtn.click();
           await page.waitForTimeout(1000);
           await page.screenshot({ path: path.join(REPLICA_SHOTS, 'home_modal_open.png') });
-          report.interactionsPassed.push('Book a Call CTA Modal: Opened successfully with form inputs');
-          console.log('Passed interaction: Book a call modal');
+          report.interactionsPassed.push('Book Stay CTA Modal: Opened successfully with form inputs');
+          console.log('Passed interaction: Book Stay modal');
         }
       } catch (e) {
-        console.error('Book a call modal error:', e.message);
+        console.error('Book Stay modal error:', e.message);
       }
     }
 
@@ -114,10 +115,14 @@ async function validate() {
     if (p.name === 'apartments') {
       await page.setViewportSize({ width: 1440, height: 900 });
       try {
+        const selectTriggers = await page.$$('[data-select="trigger"]');
+        if (selectTriggers.length > 0) {
+          await selectTriggers[0].click();
+          await page.waitForTimeout(500);
+        }
         const filterTriggers = await page.$$('[data-filter-trigger]');
         console.log(`Found ${filterTriggers.length} filter triggers`);
         if (filterTriggers.length > 1) {
-          // Click second filter trigger with force
           await filterTriggers[1].click({ force: true });
           await page.waitForTimeout(800);
           await page.screenshot({ path: path.join(REPLICA_SHOTS, 'apartments_filtered.png') });

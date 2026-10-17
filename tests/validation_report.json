@@ -18,10 +18,19 @@
     }
   ],
   "failedRequests": [],
-  "consoleErrors": [],
+  "consoleErrors": [
+    {
+      "page": "apartments",
+      "text": "Failed to load resource: net::ERR_UNKNOWN_URL_SCHEME"
+    },
+    {
+      "page": "apartment_011",
+      "text": "Failed to load resource: net::ERR_UNKNOWN_URL_SCHEME"
+    }
+  ],
   "interactionsPassed": [
     "Day/Night switcher: Clicked by night, rendered dark visuals",
-    "Book a Call CTA Modal: Opened successfully with form inputs",
+    "Book Stay CTA Modal: Opened successfully with form inputs",
     "Apartments dynamic filter: Clicked filter trigger successfully"
   ]
 }

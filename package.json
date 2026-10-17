@@ -1,7 +1,7 @@
 {
-  "name": "era-residence-replica",
+  "name": "narayanam-hotel-website",
   "version": "1.0.0",
-  "description": "Pixel-perfect recreation of ERA Residence (https://www.era-residence.com/)",
+  "description": "3D immersive website for Narayanam Hotel, Morar, Gwalior",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",

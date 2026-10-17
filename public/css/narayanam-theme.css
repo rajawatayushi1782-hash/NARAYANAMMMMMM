@@ -1,0 +1,796 @@
+/* ==========================================================================
+   NARAYANAM HOTEL — OFFICIAL BRAND THEME SYSTEM
+   Based on official styling & colors: https://www.narayanamhotel.com/
+   ========================================================================== */
+
+/* 1. CENTRALIZED DESIGN TOKENS */
+:root {
+  /* Official Narayanam Brand Colors */
+  --narayanam-gold: #bc9a5c;             /* Official accent gold/brass */
+  --narayanam-gold-light: #d6be8c;       /* Highlight champagne */
+  --narayanam-gold-dark: #9a783d;        /* Deep antique gold */
+  --narayanam-gold-muted: rgba(188, 154, 92, 0.28); /* Subtle dividers & borders */
+  --narayanam-gold-subtle: rgba(188, 154, 92, 0.09);/* Card backdrops & hover tints */
+
+  --narayanam-brown: #622c15;            /* Official heading chestnut brown */
+  --narayanam-brown-dark: #4a200e;       /* Deep mahogany */
+  --narayanam-espresso: #231f1c;         /* Primary readable text charcoal/espresso */
+  --narayanam-charcoal: #2a2521;
+  --narayanam-charcoal-light: #5a534c;   /* Secondary/subdued text */
+
+  --narayanam-ivory: #faf8f4;            /* Main warm ivory light background */
+  --narayanam-cream: #f4efe6;            /* Secondary section background */
+  --narayanam-sand: #ede4d6;             /* Warm neutral borders & accents */
+  --narayanam-pure-white: #ffffff;
+
+  /* Global Color Overrides for existing Webflow variables */
+  --_global-colors---base-0--100: #faf8f4;
+  --_global-colors---base-0--60: rgba(250, 248, 244, 0.65);
+  --_global-colors---base-0--30: rgba(250, 248, 244, 0.35);
+  --_global-colors---base-0--10: rgba(188, 154, 92, 0.18);
+  --_global-colors---base-0--5: rgba(188, 154, 92, 0.07);
+  --_global-colors---base-0--0: rgba(250, 248, 244, 0);
+
+  --_global-colors---base-1000--100: #231f1c;
+  --_global-colors---base-1000--60: rgba(35, 31, 28, 0.68);
+  --_global-colors---base-1000--30: rgba(35, 31, 28, 0.32);
+  --_global-colors---base-1000--10: rgba(188, 154, 92, 0.22);
+  --_global-colors---base-1000--5: rgba(188, 154, 92, 0.08);
+  --_global-colors---base-1000--0: rgba(35, 31, 28, 0);
+
+  --_global-colors---brand-500--velvet-plum: #1c1511;  /* Deep heritage royal espresso */
+  --_global-colors---brand-500--powder-sky: #d8c49e;   /* Warm champagne gold */
+  --_global-colors---brand-500--blush-bloom: #e8d7c0;
+
+  /* Typography Stacks */
+  --_fonts---font-display: 'Cinzel', 'Trajan Pro', ambroise-francois-std, 'Playfair Display', Georgia, serif;
+  --_fonts---font-body: 'Outfit', 'Maison Neue Extended', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --_fonts---font-script: sloop-script-three, 'Cormorant Garamond', Georgia, serif;
+}
+
+/* 2. THEME ADAPTATIONS ACROSS ALL SECTIONS */
+.theme_on-light {
+  --_colors---base-1000--primary: var(--narayanam-espresso);
+  --_colors---base-1000--gray-text: var(--narayanam-charcoal-light);
+  --_colors---other--bg: var(--narayanam-ivory);
+  --_colors---base-1000--line: var(--narayanam-gold-muted);
+  --_colors---base-1000--bg: var(--narayanam-gold-subtle);
+  background-color: var(--narayanam-ivory);
+  color: var(--narayanam-espresso);
+}
+
+.theme_on-dark {
+  --_colors---base-1000--primary: var(--narayanam-ivory);
+  --_colors---base-1000--gray-text: rgba(250, 248, 244, 0.75);
+  --_colors---other--bg: #17120e;
+  --_colors---base-1000--line: rgba(188, 154, 92, 0.3);
+  --_colors---base-1000--bg: rgba(188, 154, 92, 0.1);
+  background-color: #17120e;
+  color: var(--narayanam-ivory);
+}
+
+.theme_on-brand {
+  --_colors---base-1000--primary: var(--narayanam-espresso);
+  --_colors---other--bg: #eee0c9;
+  --_colors---base-1000--line: rgba(98, 44, 21, 0.22);
+  background-color: #eee0c9;
+  color: var(--narayanam-espresso);
+}
+
+.theme_on-color {
+  --_colors---base-1000--primary: #ffffff;
+  --_colors---base-1000--gray-text: rgba(255, 255, 255, 0.88);
+  --_colors---other--bg: #1a1410;
+  --_colors---base-1000--line: rgba(188, 154, 92, 0.32);
+}
+
+/* 3. TYPOGRAPHY & HEADING HIERARCHY */
+h1, h2, h3, .h1, .h2, .h3 {
+  font-family: var(--_fonts---font-display) !important;
+  letter-spacing: 0.02em;
+}
+
+h4, h5, h6, .h4, .h5, .h6 {
+  font-family: var(--_fonts---font-display) !important;
+  letter-spacing: 0.03em;
+}
+
+p, .p1, .p2, .l1, .l2 {
+  font-family: var(--_fonts---font-body) !important;
+}
+
+/* Elegant script accents (Gwalior, to remember, Cookies) */
+.hero-s_logo_a .a2, 
+.preloader_logo_a .a2 {
+  color: var(--narayanam-gold) !important;
+  font-family: var(--_fonts---font-script) !important;
+}
+
+/* 4. BUTTONS & INTERACTIVE ELEMENTS */
+.btn-circle {
+  border-color: var(--narayanam-gold-muted) !important;
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), background-color 0.4s ease, border-color 0.4s ease, box-shadow 0.4s ease !important;
+}
+
+.btn-circle:hover {
+  background-color: var(--narayanam-gold-subtle) !important;
+  border-color: var(--narayanam-gold) !important;
+  box-shadow: 0 0 24px rgba(188, 154, 92, 0.25) !important;
+}
+
+[data-circle] circle[data-arc] {
+  stroke: var(--narayanam-gold) !important;
+}
+
+/* Navigation items & Hover transitions */
+.nav-item {
+  transition: color 0.3s ease !important;
+}
+
+.nav-item:hover .l1,
+.nav-item:hover .l2,
+.nav-item:hover .h6 {
+  color: var(--narayanam-gold) !important;
+}
+
+/* Day/Night switcher */
+.hero-s_tabs a.is-active,
+.hero-s_tabs a:hover {
+  color: var(--narayanam-gold) !important;
+}
+.hero-s_tabs_divider {
+  background-color: var(--narayanam-gold-muted) !important;
+}
+
+/* Rotating Header Badge */
+.header-logo_bg text {
+  fill: currentColor !important;
+  letter-spacing: 2.8px;
+}
+
+/* 5. CARDS & INVENTORY (Rooms & Suites) */
+.apart-card {
+  background-color: var(--narayanam-pure-white) !important;
+  border: 1px solid var(--narayanam-gold-muted) !important;
+  border-radius: 4px;
+  box-shadow: 0 4px 20px rgba(35, 31, 28, 0.04);
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s ease, border-color 0.4s ease !important;
+}
+
+.apart-card:hover {
+  border-color: var(--narayanam-gold) !important;
+  box-shadow: 0 14px 36px rgba(98, 44, 21, 0.1) !important;
+  transform: translateY(-3px);
+}
+
+.apart-card_img_prim img {
+  border-radius: 3px;
+}
+
+.data-divider {
+  background-color: var(--narayanam-gold) !important;
+}
+
+/* Filter Dropdown */
+.filter_select_drop-down_list {
+  background-color: var(--narayanam-pure-white) !important;
+  border: 1px solid var(--narayanam-gold-muted) !important;
+  box-shadow: 0 12px 36px rgba(35, 31, 28, 0.1) !important;
+  border-radius: 4px;
+}
+
+.filter_select_drop-down_list_item {
+  transition: background-color 0.2s ease, color 0.2s ease !important;
+}
+
+.filter_select_drop-down_list_item:hover {
+  background-color: var(--narayanam-gold-subtle) !important;
+  color: var(--narayanam-brown) !important;
+}
+
+/* 6. FORMS & MODALS */
+.input_field {
+  border-bottom: 1px solid var(--narayanam-gold-muted) !important;
+  color: var(--narayanam-espresso) !important;
+  transition: border-color 0.3s ease !important;
+}
+
+.input_field:focus {
+  border-bottom-color: var(--narayanam-gold) !important;
+  outline: none;
+}
+
+.modal_cta_c {
+  background-color: var(--narayanam-ivory) !important;
+  border: 1px solid var(--narayanam-gold-muted) !important;
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.3) !important;
+  border-radius: 6px;
+}
+
+/* 7. PIN HIGHLIGHTS & ACCENTS */
+.pin_dot {
+  background-color: var(--narayanam-gold) !important;
+  color: #ffffff !important;
+}
+
+.pin_bg_pulse {
+  border-color: var(--narayanam-gold) !important;
+}
+
+/* 8. FOOTER & DECORATIVE DIVIDERS */
+.line-v, .line-h {
+  background-color: var(--narayanam-gold-muted) !important;
+}
+
+.footer-s_contact {
+  border-top: 1px solid var(--narayanam-gold-muted);
+}
+
+/* 9. COOKIE NOTICE BANNER */
+.cookie_c, [data-modal="cookie"], .cookies_card {
+  background-color: var(--narayanam-ivory) !important;
+  border: 1px solid var(--narayanam-gold-muted) !important;
+  box-shadow: 0 16px 40px rgba(35, 31, 28, 0.12) !important;
+  border-radius: 6px;
+}
+
+.cookies_card_btn-list {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 1.25rem !important;
+  white-space: nowrap !important;
+}
+
+.cookies_card_btn-list .link,
+.cookies_card_btn-list .link_label,
+.cookies_card_btn-list .link_label_text,
+.cookies_card_btn-list .h6 {
+  white-space: nowrap !important;
+  word-break: keep-all !important;
+  letter-spacing: 0.08em;
+}
+
+.cookies_card_btn-list .link:hover .h6 {
+  color: var(--narayanam-gold) !important;
+}
+
+/* 10. SELECTION HIGHLIGHT */
+::selection {
+  background-color: var(--narayanam-gold);
+  color: #ffffff;
+}
+
+/* ==========================================================================
+   11. TYPOGRAPHY OVERFLOW, CLIPPING & LAYOUT RESTORATION
+   ========================================================================== */
+
+/* Prevent SplitText line masks from clipping ascenders or descenders */
+.split-line {
+  padding-top: 0.05em !important;
+  padding-bottom: 0.22em !important;
+  margin-bottom: -0.16em !important;
+  overflow: visible !important;
+}
+
+/* Ensure headings have healthy line-heights and never clip descenders */
+h1, .h1 {
+  line-height: 1.05 !important;
+  overflow-wrap: normal !important;
+  word-break: normal !important;
+}
+
+h2, .h2 {
+  line-height: 1.1 !important;
+  overflow-wrap: normal !important;
+  word-break: normal !important;
+}
+
+h3, .h3 {
+  line-height: 1.15 !important;
+  overflow-wrap: normal !important;
+  word-break: normal !important;
+}
+
+h4, .h4 {
+  line-height: 1.2 !important;
+  overflow-wrap: normal !important;
+  word-break: normal !important;
+}
+
+h5, .h5 {
+  line-height: 1.3 !important;
+  overflow-wrap: normal !important;
+  word-break: normal !important;
+}
+
+h6, .h6 {
+  line-height: 1.35 !important;
+  overflow-wrap: normal !important;
+  word-break: normal !important;
+}
+
+/* ISSUE 1 & 5: PRELOADER BRANDING ("NARAYANAM HOTEL Heritage & Comfort") */
+.preloader_c .grid {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 100% !important;
+  position: relative !important;
+}
+
+.preloader_logo {
+  grid-area: auto !important;
+  width: 100% !important;
+  max-width: 90vw !important;
+  margin: 0 auto !important;
+  text-align: center !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+.preloader_brand_title,
+.preloader_logo [data-part="h"] {
+  width: 100% !important;
+  text-align: center !important;
+  margin: 0 auto !important;
+  overflow: visible !important;
+}
+
+.preloader-brand-line,
+.preloader_logo .brand-line {
+  display: block !important;
+  white-space: nowrap !important;
+  word-break: keep-all !important;
+  font-size: clamp(2.2rem, 6.2vw, 5.2rem) !important;
+  line-height: 1.05 !important;
+  letter-spacing: 0.05em !important;
+  text-transform: uppercase !important;
+}
+
+.preloader_logo_a {
+  position: relative !important;
+  margin-top: clamp(0.5rem, 1.5vw, 1.5rem) !important;
+  margin-left: 0 !important;
+  transform: rotate(-3deg) !important;
+  z-index: 2 !important;
+}
+
+.preloader_logo_a .a2 {
+  font-size: clamp(1.5rem, 3.8vw, 3.2rem) !important;
+  line-height: 1.2 !important;
+  color: var(--narayanam-gold) !important;
+  white-space: nowrap !important;
+  word-break: keep-all !important;
+}
+
+.preloader_title-l,
+.preloader_title-r {
+  display: none !important;
+}
+
+.preloader_b .l1 {
+  line-height: 1.4 !important;
+  overflow: visible !important;
+}
+
+/* ISSUE 2: HERO BRANDING ("NARAYANAM HOTEL GWALIOR") */
+.hero-s_logo {
+  grid-column: 1 / 11 !important;
+  grid-area: 1 / 1 / 2 / 11 !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  margin-top: clamp(1.5rem, 3.5vh, 3.5rem) !important;
+}
+
+.hero_brand_h1,
+.hero-s_logo .h1 {
+  width: 100% !important;
+  text-align: center !important;
+  overflow: visible !important;
+}
+
+.hero-brand-line {
+  display: block !important;
+  white-space: nowrap !important;
+  word-break: keep-all !important;
+  font-size: clamp(2.4rem, 6.2vw, 7.6rem) !important;
+  line-height: 0.98 !important;
+  letter-spacing: 0.04em !important;
+}
+
+.hero-s_logo_a {
+  margin-top: clamp(0.5rem, 1.5vw, 1.5rem) !important;
+  margin-left: 0 !important;
+  transform: rotate(-4deg) !important;
+}
+
+.hero-s_logo_a .a2 {
+  font-size: clamp(2.4rem, 5.8vw, 6.2rem) !important;
+  line-height: 1 !important;
+  color: var(--narayanam-gold) !important;
+  white-space: nowrap !important;
+}
+
+/* ISSUE 3: LOCATION INTRO ("ROYAL GWALIOR CITY") */
+.loc-scroll-area_screen {
+  overflow: clip !important;
+}
+
+.loc-intro-s {
+  height: auto !important;
+  min-height: 100vh !important;
+  overflow: visible !important;
+}
+
+.loc-intro-s_cap {
+  grid-area: 1/1/2/3 !important;
+}
+
+.loc-intro-s_cap .c1 {
+  letter-spacing: 0.25em !important;
+  font-size: clamp(0.75rem, 1.2vw, 1.1rem) !important;
+  white-space: nowrap !important;
+  word-break: keep-all !important;
+}
+
+.loc-intro-s_title {
+  grid-area: 1/3/2/9 !important;
+  width: auto !important;
+  max-width: 100% !important;
+  z-index: 2 !important;
+  overflow: visible !important;
+}
+
+.loc-intro-s_title .h1 {
+  font-size: clamp(2.6rem, 6vw, 7.2rem) !important;
+  line-height: 1.05 !important;
+  overflow: visible !important;
+}
+
+.loc-intro-s_title_line {
+  display: block !important;
+  white-space: nowrap !important;
+  word-break: keep-all !important;
+  overflow: visible !important;
+}
+
+.loc-intro-s_title_line.is-1 {
+  margin-left: 0 !important;
+}
+
+.loc-intro-s_title_line.is-2 {
+  margin-left: clamp(1.2rem, 3.8vw, 4.8rem) !important;
+}
+
+.loc-intro-s_title_line.is-3 {
+  margin-left: 0 !important;
+}
+
+/* ISSUE 4: MORAR, NEAR KALPI BRIDGE DESCENDER CLIPPING FIX */
+.loc-intro-s_desc {
+  overflow: visible !important;
+}
+
+.loc-intro-s_desc .h5 {
+  white-space: normal !important;
+  overflow-wrap: break-word !important;
+  font-size: clamp(1.4rem, 2.3vw, 2.4rem) !important;
+  line-height: 1.35 !important;
+  padding-bottom: 0.25em !important;
+  overflow: visible !important;
+}
+
+/* ISSUE 2: THE SPACE TO LIVE IN */
+.interior-s_title {
+  grid-column: 2 / 10 !important;
+  grid-area: auto !important;
+  width: 100% !important;
+  max-width: 90vw !important;
+  margin: 0 auto !important;
+  text-align: center !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  overflow: visible !important;
+}
+
+.interior_heading_h1,
+.interior-s_title .h1 {
+  width: 100% !important;
+  text-align: center !important;
+  overflow: visible !important;
+}
+
+.interior-line {
+  display: block !important;
+  white-space: nowrap !important;
+  word-break: keep-all !important;
+  font-size: clamp(2.8rem, 7.2vw, 8rem) !important;
+  line-height: 1.05 !important;
+}
+
+.interior-s_title_a {
+  margin-top: clamp(0.5rem, 1.5vw, 1.5rem) !important;
+  margin-left: 0 !important;
+  transform: rotate(-6deg) !important;
+}
+
+.interior-s_title_a .a1 {
+  font-size: clamp(2.8rem, 7.2vw, 8rem) !important;
+  line-height: 1.05 !important;
+  white-space: nowrap !important;
+  color: var(--narayanam-gold) !important;
+}
+
+/* ISSUE 1: FOOTER PHONE NUMBER (+91 6262621454) */
+.contact-cms_list_item .h2,
+a[href^="tel:"] .h2,
+.footer-s_contact .h2 {
+  white-space: nowrap !important;
+  word-break: keep-all !important;
+  font-size: clamp(1.8rem, 5.8vw, 5.5rem) !important;
+  line-height: 1.15 !important;
+  letter-spacing: 0.03em !important;
+}
+
+/* CONTACT PAGE TITLE (CONTACT US) */
+.contact-s_title {
+  grid-column: 1 / -1 !important;
+  grid-area: auto !important;
+  width: 100% !important;
+  max-width: 100% !important;
+}
+
+.contact-s_title .h1 {
+  white-space: nowrap !important;
+  word-break: keep-all !important;
+  font-size: clamp(2.8rem, 8.2vw, 9rem) !important;
+  line-height: 1.05 !important;
+}
+
+/* CTA CALLOUTS (Reserve Your Stay / Royal City Views) */
+.cta-s_title .h1 {
+  width: 100% !important;
+  text-align: center !important;
+  font-size: clamp(2.8rem, 7.5vw, 8.5rem) !important;
+  line-height: 1.05 !important;
+}
+
+.cta-line {
+  display: block !important;
+  white-space: nowrap !important;
+  word-break: keep-all !important;
+}
+
+/* ROOM DETAIL SPECS OVERFLOW / TRUNCATION FIX */
+.lot-s_data .data-item .h5 {
+  font-size: clamp(1.1rem, 2vw, 1.8rem) !important;
+  line-height: 1.25 !important;
+  white-space: normal !important;
+  word-break: normal !important;
+  overflow-wrap: break-word !important;
+}
+
+/* ==========================================================================
+   HOTSPOT INTERACTIVE CARDS & IMAGE DISPLAY FIX
+   ========================================================================== */
+
+/* Pins visibility across desktop, tablet, and mobile */
+.pins-cms {
+  display: block !important;
+  pointer-events: auto !important;
+}
+
+.pins-cms .pin {
+  pointer-events: auto !important;
+  cursor: pointer !important;
+  touch-action: manipulation;
+}
+
+@media (max-width: 991px) {
+  .pins-cms_list_item {
+    pointer-events: auto !important;
+    display: block !important;
+  }
+  .pin {
+    --pin-bg-s: 32px !important;
+  }
+}
+
+/* Hotspot Card Image Container & Image Styles */
+.floating-tip-card_img-w {
+  width: 100% !important;
+  height: 130px !important;
+  margin: 10px 0 !important;
+  border-radius: 4px !important;
+  overflow: hidden !important;
+  position: relative !important;
+  z-index: 2 !important;
+  background-color: rgba(200, 169, 107, 0.1) !important;
+  border: 1px solid rgba(200, 169, 107, 0.35) !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08) !important;
+}
+
+.floating-tip-card_img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  object-position: center !important;
+  display: block !important;
+  transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1) !important;
+}
+
+.floating-tip-card:hover .floating-tip-card_img {
+  transform: scale(1.05) !important;
+}
+
+/* Card layout & typography preservation */
+.floating-tip-card {
+  aspect-ratio: auto !important;
+  height: auto !important;
+  min-height: auto !important;
+  width: 290px !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: flex-start !important;
+  padding: 20px 22px !important;
+  gap: 12px !important;
+  background-color: var(--narayanam-ivory) !important;
+  border: 1px solid var(--narayanam-gold-light) !important;
+  border-radius: 4px !important;
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.18) !important;
+  pointer-events: auto !important;
+}
+
+.floating-tip-card_t {
+  position: relative !important;
+  z-index: 2 !important;
+  margin: 0 !important;
+}
+
+.floating-tip-card_t .h5 {
+  font-family: 'Cinzel', serif !important;
+  font-size: 1.22rem !important;
+  line-height: 1.25 !important;
+  letter-spacing: 0.04em !important;
+  color: var(--narayanam-dark) !important;
+  margin: 0 !important;
+}
+
+.floating-tip-card_img-w {
+  width: 100% !important;
+  height: 155px !important;
+  margin: 0 !important;
+  border-radius: 4px !important;
+  overflow: hidden !important;
+  position: relative !important;
+  z-index: 2 !important;
+  background-color: rgba(200, 169, 107, 0.1) !important;
+  border: 1px solid rgba(200, 169, 107, 0.35) !important;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1) !important;
+}
+
+.floating-tip-card_img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  object-position: center !important;
+  display: block !important;
+  transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1) !important;
+}
+
+.floating-tip-card:hover .floating-tip-card_img {
+  transform: scale(1.05) !important;
+}
+
+.floating-tip-card_b {
+  position: relative !important;
+  z-index: 2 !important;
+  margin: 0 !important;
+}
+
+.floating-tip-card_b .p1 {
+  font-size: 0.88rem !important;
+  line-height: 1.5 !important;
+  color: #44403c !important;
+  margin: 0 !important;
+}
+
+/* Modal Hotspot Cards */
+[data-modal-tip] {
+  z-index: 25000 !important;
+  position: fixed !important;
+  inset: 0% !important;
+}
+
+[data-modal-tip] .modal_c {
+  pointer-events: auto !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 100% !important;
+  height: 100% !important;
+  position: relative !important;
+  padding: 20px !important;
+}
+
+[data-modal-tip] .moda_tip {
+  pointer-events: auto !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: auto !important;
+  height: auto !important;
+  position: relative !important;
+  z-index: 2 !important;
+}
+
+.modal-tip-card {
+  width: min(92vw, 360px) !important;
+  max-width: 360px !important;
+  min-height: auto !important;
+  height: auto !important;
+  padding: 24px !important;
+  background-color: var(--narayanam-ivory) !important;
+  border: 1px solid var(--narayanam-gold) !important;
+  box-shadow: 0 30px 70px rgba(0, 0, 0, 0.45) !important;
+}
+
+.modal-tip-card .floating-tip-card_img-w {
+  height: 175px !important;
+}
+
+.modal-tip-card .floating-tip-card_t .h5 {
+  font-size: 1.28rem !important;
+}
+
+.modal-tip-card .floating-tip-card_b .p1 {
+  font-size: 0.92rem !important;
+  line-height: 1.55 !important;
+}
+
+.modal-tip-card_header {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  width: 100% !important;
+  gap: 12px !important;
+  position: relative !important;
+  z-index: 2 !important;
+}
+
+.modal-tip-close_btn {
+  width: 32px !important;
+  height: 32px !important;
+  min-width: 32px !important;
+  min-height: 32px !important;
+  cursor: pointer !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  border-radius: 50% !important;
+  background-color: rgba(200, 169, 107, 0.15) !important;
+  border: 1px solid var(--narayanam-gold) !important;
+  color: var(--narayanam-dark) !important;
+  transition: all 0.25s ease !important;
+  flex-shrink: 0 !important;
+  position: relative !important;
+  z-index: 5 !important;
+}
+
+.modal-tip-close_btn:hover {
+  background-color: var(--narayanam-gold) !important;
+  color: #ffffff !important;
+  transform: scale(1.08) !important;
+}
+
+
