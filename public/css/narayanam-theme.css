@@ -55,8 +55,11 @@
   --_colors---other--bg: var(--narayanam-ivory);
   --_colors---base-1000--line: var(--narayanam-gold-muted);
   --_colors---base-1000--bg: var(--narayanam-gold-subtle);
-  background-color: var(--narayanam-ivory);
   color: var(--narayanam-espresso);
+}
+
+.theme_on-light:not([data-theme]):not(.header-logo):not(.header-nav):not(.s-bar-w):not(.s-down):not(.header-cramps) {
+  background-color: var(--narayanam-ivory);
 }
 
 .theme_on-dark {
@@ -65,16 +68,22 @@
   --_colors---other--bg: #17120e;
   --_colors---base-1000--line: rgba(188, 154, 92, 0.3);
   --_colors---base-1000--bg: rgba(188, 154, 92, 0.1);
-  background-color: #17120e;
   color: var(--narayanam-ivory);
+}
+
+.theme_on-dark:not([data-theme]):not(.header-logo):not(.header-nav):not(.s-bar-w):not(.s-down):not(.header-cramps) {
+  background-color: #17120e;
 }
 
 .theme_on-brand {
   --_colors---base-1000--primary: var(--narayanam-espresso);
   --_colors---other--bg: #eee0c9;
   --_colors---base-1000--line: rgba(98, 44, 21, 0.22);
-  background-color: #eee0c9;
   color: var(--narayanam-espresso);
+}
+
+.theme_on-brand:not([data-theme]):not(.header-logo):not(.header-nav):not(.s-bar-w):not(.s-down):not(.header-cramps) {
+  background-color: #eee0c9;
 }
 
 .theme_on-color {
@@ -82,6 +91,51 @@
   --_colors---base-1000--gray-text: rgba(255, 255, 255, 0.88);
   --_colors---other--bg: #1a1410;
   --_colors---base-1000--line: rgba(188, 154, 92, 0.32);
+}
+
+/* 2.1 FLOATING HEADER, LOGO, NAVIGATION & SCROLL ELEMENTS TRANSPARENCY
+   Ensures that fixed navigation and indicator elements never display rectangular background boxes */
+[data-theme],
+[data-theme].theme_on-light,
+[data-theme].theme_on-dark,
+[data-theme].theme_on-brand,
+[data-theme].theme_on-color,
+.header-logo,
+.header-logo.theme_on-light,
+.header-logo.theme_on-dark,
+.header-logo.theme_on-brand,
+.header-logo.theme_on-color,
+.header-nav,
+.header-nav.theme_on-light,
+.header-nav.theme_on-dark,
+.header-nav.theme_on-brand,
+.header-nav.theme_on-color,
+.s-bar-w,
+.s-bar-w.theme_on-light,
+.s-bar-w.theme_on-dark,
+.s-bar-w.theme_on-brand,
+.s-bar-w.theme_on-color,
+.s-down,
+.s-down.theme_on-light,
+.s-down.theme_on-dark,
+.s-down.theme_on-brand,
+.s-down.theme_on-color,
+.header-cramps,
+.header-cramps.theme_on-light,
+.header-cramps.theme_on-dark,
+.header-cramps.theme_on-brand,
+.header-cramps.theme_on-color,
+.logo_symbol,
+.header-logo_bg,
+.header-nav_list,
+.btn-menu,
+.btn-menu_label,
+.nav-item,
+.s-bar,
+.s-bar_thumb {
+  background: transparent !important;
+  background-color: transparent !important;
+  box-shadow: none !important;
 }
 
 /* 3. TYPOGRAPHY & HEADING HIERARCHY */
@@ -488,46 +542,107 @@ h6, .h6 {
   overflow: visible !important;
 }
 
-/* ISSUE 2: THE SPACE TO LIVE IN */
+/* ==========================================================================
+   HERO / INTRO SECTION: BALANCED ARCH COMPOSITION & CENTERED HEADING
+   ========================================================================== */
+
+/* 1. Proportional Architectural Arch Mask/Radius */
+.section.arch.section-interior-arch,
+.section.arch:has(.interior-w),
+.section.arch:has(.interior-s) {
+  border-top-left-radius: 50% clamp(140px, 18vw, 260px) !important;
+  border-top-right-radius: 50% clamp(140px, 18vw, 260px) !important;
+  overflow: clip !important;
+  position: relative !important;
+  z-index: 2 !important;
+}
+
+/* 2. Balanced vertical spacing under the arch apex */
+.interior-s > .u-272:first-child {
+  height: clamp(60px, 10vh, 120px) !important;
+}
+
+/* 3. Centering the heading composition horizontally and balancing vertically */
 .interior-s_title {
-  grid-column: 2 / 10 !important;
-  grid-area: auto !important;
+  grid-column: 1 / -1 !important;
+  grid-row: 1 / 2 !important;
+  grid-area: 1 / 1 / 2 / -1 !important;
   width: 100% !important;
-  max-width: 90vw !important;
+  max-width: 1000px !important;
   margin: 0 auto !important;
   text-align: center !important;
   display: flex !important;
   flex-direction: column !important;
   align-items: center !important;
+  justify-content: center !important;
   overflow: visible !important;
+  position: relative !important;
+  z-index: 5 !important;
 }
 
 .interior_heading_h1,
 .interior-s_title .h1 {
   width: 100% !important;
+  max-width: 100% !important;
   text-align: center !important;
   overflow: visible !important;
+  margin: 0 auto !important;
+  padding: 0 !important;
 }
 
+/* 4. Elegant oversized serif typography without clipping */
 .interior-line {
-  display: block !important;
+  display: inline-block !important;
   white-space: nowrap !important;
   word-break: keep-all !important;
-  font-size: clamp(2.8rem, 7.2vw, 8rem) !important;
-  line-height: 1.05 !important;
+  font-family: var(--_typography---font-family--serif, 'Cinzel', serif) !important;
+  font-size: clamp(26px, 5.2vw, 76px) !important;
+  line-height: 1.15 !important;
+  letter-spacing: 0.04em !important;
+  text-transform: uppercase !important;
+  color: var(--narayanam-dark) !important;
 }
 
+/* 5. Aligned "LIVE IN" accent script centered below the heading */
 .interior-s_title_a {
-  margin-top: clamp(0.5rem, 1.5vw, 1.5rem) !important;
+  margin-top: clamp(0.4rem, 1vw, 1rem) !important;
   margin-left: 0 !important;
-  transform: rotate(-6deg) !important;
+  transform: none !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  width: 100% !important;
 }
 
 .interior-s_title_a .a1 {
-  font-size: clamp(2.8rem, 7.2vw, 8rem) !important;
-  line-height: 1.05 !important;
+  font-family: var(--_typography---font-family--accent, 'Playfair Display', serif) !important;
+  font-style: italic !important;
+  font-size: clamp(22px, 4.4vw, 64px) !important;
+  line-height: 1.15 !important;
   white-space: nowrap !important;
   color: var(--narayanam-gold) !important;
+  letter-spacing: 0.05em !important;
+  text-align: center !important;
+}
+
+/* 6. Responsive adjustments for mobile viewports */
+@media (max-width: 767px) {
+  .section.arch.section-interior-arch,
+  .section.arch:has(.interior-w),
+  .section.arch:has(.interior-s) {
+    border-top-left-radius: 50% clamp(60px, 15vw, 120px) !important;
+    border-top-right-radius: 50% clamp(60px, 15vw, 120px) !important;
+  }
+  .interior-s > .u-272:first-child {
+    height: clamp(40px, 8vh, 70px) !important;
+  }
+  .interior-line {
+    font-size: clamp(22px, 6.4vw, 32px) !important;
+    letter-spacing: 0.03em !important;
+  }
+  .interior-s_title_a .a1 {
+    font-size: clamp(20px, 5.6vw, 28px) !important;
+  }
 }
 
 /* ISSUE 1: FOOTER PHONE NUMBER (+91 6262621454) */
@@ -792,5 +907,425 @@ a[href^="tel:"] .h2,
   color: #ffffff !important;
   transform: scale(1.08) !important;
 }
+
+/* ==========================================================================
+   5. LUXURY AMBIENT ANIMATION & FLOWER DECORATION REMOVAL
+   Replaces pink bougainvillea animations with subtle champagne-gold particles
+   and soft natural sunlight/shadow movement across the ivory background.
+   ========================================================================== */
+
+/* Remove pink flower animations completely across the entire website */
+.flower,
+.loc-path-w_flower,
+.interior-s_l_img_flower {
+  display: none !important;
+  opacity: 0 !important;
+  visibility: hidden !important;
+  pointer-events: none !important;
+}
+
+/* Editorial Section Luxury Container */
+.editorial-luxury-fx {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* Ensure editorial text and logo are strictly in foreground */
+.loc-info-s {
+  position: relative;
+  z-index: 3 !important;
+}
+
+/* Soft Natural Sunlight & Shadow Layer */
+.luxury-light-layer {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.sunlight-caustic {
+  position: absolute;
+  top: -15%;
+  left: -10%;
+  width: 80%;
+  height: 90%;
+  background: radial-gradient(
+    ellipse 75% 65% at 20% 20%,
+    rgba(224, 202, 156, 0.22) 0%,
+    rgba(214, 190, 140, 0.12) 35%,
+    rgba(250, 248, 244, 0.04) 65%,
+    transparent 80%
+  );
+  filter: blur(35px);
+  opacity: 0.85;
+  animation: sunlightBreathe 18s ease-in-out infinite alternate;
+  will-change: transform, opacity;
+}
+
+.sunlight-shimmer {
+  position: absolute;
+  bottom: -10%;
+  right: -10%;
+  width: 65%;
+  height: 70%;
+  background: radial-gradient(
+    ellipse 60% 60% at 80% 80%,
+    rgba(224, 202, 156, 0.15) 0%,
+    rgba(250, 248, 244, 0.05) 50%,
+    transparent 75%
+  );
+  filter: blur(40px);
+  opacity: 0.7;
+  animation: sunlightShimmer 22s ease-in-out infinite alternate;
+  will-change: transform, opacity;
+}
+
+.shadow-breeze {
+  position: absolute;
+  inset: 0;
+  background: 
+    radial-gradient(ellipse 55% 40% at 15% 85%, rgba(98, 44, 21, 0.028) 0%, transparent 60%),
+    radial-gradient(ellipse 65% 50% at 85% 25%, rgba(98, 44, 21, 0.022) 0%, transparent 65%);
+  filter: blur(25px);
+  animation: shadowBreeze 24s ease-in-out infinite alternate;
+  will-change: transform, opacity;
+}
+
+/* Corner Architectural Filigree & Warmth (Balanced Corner Composition) */
+.luxury-corner-decor {
+  position: absolute;
+  width: 220px;
+  height: 220px;
+  pointer-events: none;
+  z-index: 2;
+  transition: opacity 0.5s ease;
+}
+
+.luxury-corner-decor.is-tl {
+  top: 0;
+  left: 0;
+}
+
+.luxury-corner-decor.is-br {
+  bottom: 0;
+  right: 0;
+}
+
+.corner-warmth {
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(188, 154, 92, 0.14) 0%, rgba(250, 248, 244, 0) 70%);
+  filter: blur(15px);
+}
+
+.corner-filigree-svg {
+  width: 100%;
+  height: 100%;
+  opacity: 0.8;
+  animation: filigreeSubtlePulse 14s ease-in-out infinite alternate;
+}
+
+/* Champagne-Gold Floating Micro-Particles */
+.luxury-particles {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 2;
+}
+
+.gold-particle {
+  position: absolute;
+  border-radius: 50%;
+  background: radial-gradient(circle at 35% 35%, #fff5e0 0%, #d6be8c 50%, #bc9a5c 100%);
+  box-shadow: 0 0 6px rgba(188, 154, 92, 0.45);
+  pointer-events: none;
+  will-change: transform, opacity;
+}
+
+/* Top-Left / Left Perimeter Motes */
+.gold-particle.p1 {
+  width: 3.5px;
+  height: 3.5px;
+  top: 8%;
+  left: 6%;
+  opacity: 0.65;
+  animation: particleFloatA 15s ease-in-out infinite alternate;
+}
+
+.gold-particle.p2 {
+  width: 2.5px;
+  height: 2.5px;
+  top: 14%;
+  left: 12%;
+  opacity: 0.45;
+  animation: particleFloatB 18s ease-in-out infinite alternate 1.5s;
+}
+
+.gold-particle.p3 {
+  width: 4px;
+  height: 4px;
+  top: 24%;
+  left: 5%;
+  opacity: 0.55;
+  animation: particleFloatC 21s ease-in-out infinite alternate 0.8s;
+}
+
+.gold-particle.p4 {
+  width: 3px;
+  height: 3px;
+  top: 36%;
+  left: 9%;
+  opacity: 0.5;
+  animation: particleFloatA 19s ease-in-out infinite alternate 2.5s;
+}
+
+.gold-particle.p5 {
+  width: 2px;
+  height: 2px;
+  top: 6%;
+  left: 20%;
+  opacity: 0.4;
+  animation: particleFloatB 16s ease-in-out infinite alternate 3s;
+}
+
+/* Bottom-Left Perimeter Motes */
+.gold-particle.p6 {
+  width: 3.5px;
+  height: 3.5px;
+  bottom: 18%;
+  left: 7%;
+  opacity: 0.5;
+  animation: particleFloatC 20s ease-in-out infinite alternate 1.2s;
+}
+
+.gold-particle.p7 {
+  width: 2.5px;
+  height: 2.5px;
+  bottom: 8%;
+  left: 14%;
+  opacity: 0.45;
+  animation: particleFloatA 17s ease-in-out infinite alternate 4s;
+}
+
+.gold-particle.p8 {
+  width: 3px;
+  height: 3px;
+  bottom: 28%;
+  left: 11%;
+  opacity: 0.4;
+  animation: particleFloatB 22s ease-in-out infinite alternate 2s;
+}
+
+/* Top-Right Perimeter Motes */
+.gold-particle.p9 {
+  width: 3px;
+  height: 3px;
+  top: 10%;
+  right: 8%;
+  opacity: 0.5;
+  animation: particleFloatA 18s ease-in-out infinite alternate 2.8s;
+}
+
+.gold-particle.p10 {
+  width: 2.5px;
+  height: 2.5px;
+  top: 22%;
+  right: 5%;
+  opacity: 0.45;
+  animation: particleFloatC 16s ease-in-out infinite alternate 0.5s;
+}
+
+.gold-particle.p11 {
+  width: 4px;
+  height: 4px;
+  top: 6%;
+  right: 18%;
+  opacity: 0.55;
+  animation: particleFloatB 20s ease-in-out infinite alternate 3.2s;
+}
+
+/* Bottom-Right Perimeter Motes */
+.gold-particle.p12 {
+  width: 3.5px;
+  height: 3.5px;
+  bottom: 12%;
+  right: 7%;
+  opacity: 0.6;
+  animation: particleFloatC 19s ease-in-out infinite alternate 1.8s;
+}
+
+.gold-particle.p13 {
+  width: 2.5px;
+  height: 2.5px;
+  bottom: 24%;
+  right: 12%;
+  opacity: 0.45;
+  animation: particleFloatA 15s ease-in-out infinite alternate 2.2s;
+}
+
+.gold-particle.p14 {
+  width: 3px;
+  height: 3px;
+  bottom: 6%;
+  right: 22%;
+  opacity: 0.5;
+  animation: particleFloatB 23s ease-in-out infinite alternate 4.5s;
+}
+
+.gold-particle.p15 {
+  width: 2px;
+  height: 2px;
+  bottom: 35%;
+  right: 6%;
+  opacity: 0.35;
+  animation: particleFloatC 17s ease-in-out infinite alternate 1s;
+}
+
+/* Keyframes for Gentle, Restrained Movement */
+@keyframes sunlightBreathe {
+  0% {
+    transform: translate(0, 0) scale(1);
+    opacity: 0.8;
+  }
+  50% {
+    transform: translate(3%, 2%) scale(1.04);
+    opacity: 0.95;
+  }
+  100% {
+    transform: translate(-2%, 4%) scale(1.02);
+    opacity: 0.85;
+  }
+}
+
+@keyframes sunlightShimmer {
+  0% {
+    transform: translate(0, 0) scale(1);
+    opacity: 0.65;
+  }
+  50% {
+    transform: translate(-3%, -2%) scale(1.05);
+    opacity: 0.8;
+  }
+  100% {
+    transform: translate(2%, -3%) scale(0.98);
+    opacity: 0.7;
+  }
+}
+
+@keyframes shadowBreeze {
+  0% {
+    transform: translate(0, 0) scale(1);
+    opacity: 0.7;
+  }
+  50% {
+    transform: translate(2%, -1.5%) scale(1.03);
+    opacity: 0.9;
+  }
+  100% {
+    transform: translate(-1.5%, 2%) scale(0.98);
+    opacity: 0.75;
+  }
+}
+
+@keyframes filigreeSubtlePulse {
+  0% {
+    opacity: 0.7;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.9;
+    transform: scale(1.02);
+  }
+  100% {
+    opacity: 0.75;
+    transform: scale(0.99);
+  }
+}
+
+@keyframes particleFloatA {
+  0% {
+    transform: translate(0, 0);
+    opacity: 0.35;
+  }
+  50% {
+    transform: translate(12px, -18px);
+    opacity: 0.75;
+  }
+  100% {
+    transform: translate(-8px, -32px);
+    opacity: 0.4;
+  }
+}
+
+@keyframes particleFloatB {
+  0% {
+    transform: translate(0, 0);
+    opacity: 0.3;
+  }
+  50% {
+    transform: translate(-14px, -14px);
+    opacity: 0.65;
+  }
+  100% {
+    transform: translate(10px, -28px);
+    opacity: 0.35;
+  }
+}
+
+@keyframes particleFloatC {
+  0% {
+    transform: translate(0, 0);
+    opacity: 0.4;
+  }
+  50% {
+    transform: translate(10px, 12px);
+    opacity: 0.7;
+  }
+  100% {
+    transform: translate(-12px, 24px);
+    opacity: 0.45;
+  }
+}
+
+/* Reduced Motion Support */
+@media (prefers-reduced-motion: reduce) {
+  .sunlight-caustic,
+  .sunlight-shimmer,
+  .shadow-breeze,
+  .corner-filigree-svg,
+  .gold-particle {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+
+/* Mobile Responsive Adjustments */
+@media (max-width: 991px) {
+  .luxury-corner-decor {
+    width: 140px;
+    height: 140px;
+  }
+  .sunlight-caustic {
+    width: 95%;
+    height: 70%;
+  }
+  .gold-particle.p4,
+  .gold-particle.p8,
+  .gold-particle.p11,
+  .gold-particle.p15 {
+    display: none;
+  }
+}
+
 
 
