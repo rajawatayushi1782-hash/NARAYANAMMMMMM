@@ -1,0 +1,282 @@
+[
+  {
+    "lineNo": 1152,
+    "sectionContext": "landscape-cover_img",
+    "src": "/assets/6a068da7ad91b057365bf974_landscape.svg",
+    "srcset": null,
+    "alt": "",
+    "className": "img contain"
+  },
+  {
+    "lineNo": 1232,
+    "sectionContext": "preloader_bg_a",
+    "src": "/assets/file_7bdege",
+    "srcset": null,
+    "alt": "",
+    "className": "img"
+  },
+  {
+    "lineNo": 1668,
+    "sectionContext": "img-w h-auto",
+    "src": "/assets/narayanam/hero/banner-1.webp",
+    "srcset": "/assets/6a25da81dce540a251389928_era-residence_gated-community_day-p-500.webp 500w, /assets/6a25da81dce540a251389928_era-residence_gated-community_day-p-800.webp 800w, /assets/6a25da81dce540a251389928_era-residence_gated-community_day-p-1080.webp 1080w, /assets/6a25da81dce540a251389928_era-residence_gated-community_day-p-1600.webp 1600w, /assets/narayanam/hero/banner-1.webp 1920w",
+    "alt": "",
+    "className": "img h-auto hero-img"
+  },
+  {
+    "lineNo": 1674,
+    "sectionContext": "img-w h-auto",
+    "src": "/assets/narayanam/hero/hero-night.jpg",
+    "srcset": "/assets/file_mlb77 500w, /assets/file_71p59e 800w, /assets/file_vmhizb 1080w, /assets/file_eagw2 1600w, /assets/narayanam/hero/hero-night.jpg 1920w",
+    "alt": "",
+    "className": "img h-auto hero-img"
+  },
+  {
+    "lineNo": 1869,
+    "sectionContext": "img-w",
+    "src": "/assets/narayanam/facilities/hotel-exterior-1.webp",
+    "srcset": "/assets/narayanam/facilities/hotel-exterior-1.webp 1920w",
+    "alt": "Narayanam Hotel Gwalior",
+    "className": "img"
+  },
+  {
+    "lineNo": 1909,
+    "sectionContext": "img-w",
+    "src": "/assets/narayanam/rooms/royal-suite.jpg",
+    "srcset": "/assets/narayanam/rooms/royal-suite.jpg 1920w",
+    "alt": "Narayanam Hotel Royal Suite",
+    "className": "img"
+  },
+  {
+    "lineNo": 1949,
+    "sectionContext": "img-w",
+    "src": "/assets/narayanam/dining/naivedyam-restaurant.jpg",
+    "srcset": "/assets/narayanam/dining/naivedyam-restaurant.jpg 1920w",
+    "alt": "Naivedyam Restaurant Narayanam Hotel",
+    "className": "img"
+  },
+  {
+    "lineNo": 2021,
+    "sectionContext": "quote-w_bg",
+    "src": "/assets/narayanam/rooms/premium-suite.jpeg",
+    "srcset": "/assets/6a0f8c07861fe831459ff0d9_img_cam_05_alpha-p-500.png 500w, /assets/6a0f8c07861fe831459ff0d9_img_cam_05_alpha-p-800.png 800w, /assets/6a0f8c07861fe831459ff0d9_img_cam_05_alpha-p-1080.png 1080w, /assets/narayanam/rooms/premium-suite.jpeg 1920w",
+    "alt": "Modern building with flowering vines beside a rectangular swimming pool and palm trees.",
+    "className": "img h-auto quote-w_bg_img"
+  },
+  {
+    "lineNo": 2184,
+    "sectionContext": "img-w",
+    "src": "/assets/narayanam/facilities/hotel-front-view.jpg",
+    "srcset": "/assets/narayanam/facilities/hotel-front-view.jpg 1920w",
+    "alt": "Narayanam Hotel Gwalior exterior and facade",
+    "className": "img"
+  },
+  {
+    "lineNo": 2259,
+    "sectionContext": "loc-path-s_path_c",
+    "src": "/assets/6a51975c584436cfdd9e2406_loc_path.svg",
+    "srcset": null,
+    "alt": "",
+    "className": "img loc-path"
+  },
+  {
+    "lineNo": 2260,
+    "sectionContext": "unknown",
+    "src": "/assets/6a51975cc959ee1e44045b0e_loc_path_labels.svg",
+    "srcset": null,
+    "alt": "",
+    "className": "img h-auto"
+  },
+  {
+    "lineNo": 2355,
+    "sectionContext": "img-w h-auto",
+    "src": "/assets/narayanam/facilities/hotel-entrance.jpg",
+    "srcset": "/assets/6a15185e6803ae588479d12b_era-residence-master-plan-p-500.png 500w, /assets/6a15185e6803ae588479d12b_era-residence-master-plan-p-800.png 800w, /assets/6a15185e6803ae588479d12b_era-residence-master-plan-p-1080.png 1080w, /assets/narayanam/facilities/hotel-entrance.jpg 1920w",
+    "alt": "Narayanam Hotel Reception and Front Desk with hospitable team and gold emblem counter.",
+    "className": "img h-auto"
+  },
+  {
+    "lineNo": 2430,
+    "sectionContext": "img-w",
+    "src": "/assets/narayanam/rooms/royal-suite.jpg",
+    "srcset": "/assets/file_snb32v 500w, /assets/file_rgw1qq 800w, /assets/file_moi2db 1080w, /assets/file_o02p9q 1600w, /assets/narayanam/rooms/royal-suite.jpg 1920w",
+    "alt": "",
+    "className": "img"
+  },
+  {
+    "lineNo": 2491,
+    "sectionContext": "img-w",
+    "src": "/assets/narayanam/rooms/premium-suite.jpeg",
+    "srcset": "/assets/6a1575f46655e8c4e795ec64_era-residence-landscaping-p-500.webp 500w, /assets/6a1575f46655e8c4e795ec64_era-residence-landscaping-p-800.webp 800w, /assets/6a1575f46655e8c4e795ec64_era-residence-landscaping-p-1080.webp 1080w, /assets/6a1575f46655e8c4e795ec64_era-residence-landscaping-p-1600.webp 1600w, /assets/narayanam/rooms/premium-suite.jpeg 1920w",
+    "alt": "",
+    "className": "img"
+  },
+  {
+    "lineNo": 2552,
+    "sectionContext": "img-w",
+    "src": "/assets/narayanam/rooms/executive-room.jpg",
+    "srcset": "/assets/6a15153b797c328a9f2f5964_era-residence-terrace-p-500.png 500w, /assets/6a15153b797c328a9f2f5964_era-residence-terrace-p-800.png 800w, /assets/6a15153b797c328a9f2f5964_era-residence-terrace-p-1080.png 1080w, /assets/narayanam/rooms/executive-room.jpg 1920w",
+    "alt": "",
+    "className": "img"
+  },
+  {
+    "lineNo": 2702,
+    "sectionContext": "img-w",
+    "src": "/assets/narayanam/dining/naivedyam-restaurant.jpg",
+    "srcset": "/assets/6a1512e5b24991c76981118b_era-residence-gated-community-p-500.webp 500w, /assets/6a1512e5b24991c76981118b_era-residence-gated-community-p-800.webp 800w, /assets/6a1512e5b24991c76981118b_era-residence-gated-community-p-1080.webp 1080w, /assets/6a1512e5b24991c76981118b_era-residence-gated-community-p-1600.webp 1600w, /assets/narayanam/dining/naivedyam-restaurant.jpg 1920w",
+    "alt": "",
+    "className": "img-p"
+  },
+  {
+    "lineNo": 2731,
+    "sectionContext": "img-w",
+    "src": "/assets/narayanam/dining/nishabd-coffee-shop.webp",
+    "srcset": "/assets/6a151264dc1dcca76fda17d9_era-residence-pool-p-500.webp 500w, /assets/6a151264dc1dcca76fda17d9_era-residence-pool-p-800.webp 800w, /assets/6a151264dc1dcca76fda17d9_era-residence-pool-p-1080.webp 1080w, /assets/6a151264dc1dcca76fda17d9_era-residence-pool-p-1600.webp 1600w, /assets/narayanam/dining/nishabd-coffee-shop.webp 1920w",
+    "alt": "",
+    "className": "img-p"
+  },
+  {
+    "lineNo": 2760,
+    "sectionContext": "img-w",
+    "src": "/assets/narayanam/facilities/navrang-banquet-hall.jpg",
+    "srcset": "/assets/6a1573fc640c344ee0705819_era-residence-parking-p-500.png 500w, /assets/6a1573fc640c344ee0705819_era-residence-parking-p-800.png 800w, /assets/narayanam/facilities/navrang-banquet-hall.jpg 1920w",
+    "alt": "",
+    "className": "img-p"
+  },
+  {
+    "lineNo": 2789,
+    "sectionContext": "img-w",
+    "src": "/assets/narayanam/facilities/nirvana-gym.webp",
+    "srcset": "/assets/6a15132fe66907986a254201_era-residence-spa-_26-gym-p-500.webp 500w, /assets/6a15132fe66907986a254201_era-residence-spa-_26-gym-p-800.webp 800w, /assets/6a15132fe66907986a254201_era-residence-spa-_26-gym-p-1080.webp 1080w, /assets/6a15132fe66907986a254201_era-residence-spa-_26-gym-p-1600.webp 1600w, /assets/narayanam/facilities/nirvana-gym.webp 1920w",
+    "alt": "",
+    "className": "img-p"
+  },
+  {
+    "lineNo": 2819,
+    "sectionContext": "img-w",
+    "src": "/assets/narayanam/dining/restaurant-interior.jpg",
+    "srcset": "/assets/6a151382fb101ce2ca9db288_era-residence-landscaping-p-500.png 500w, /assets/6a151382fb101ce2ca9db288_era-residence-landscaping-p-800.png 800w, /assets/6a151382fb101ce2ca9db288_era-residence-landscaping-p-1080.png 1080w, /assets/narayanam/dining/restaurant-interior.jpg 1920w",
+    "alt": "",
+    "className": "img-p"
+  },
+  {
+    "lineNo": 2932,
+    "sectionContext": "img-w",
+    "src": "/assets/6a1571e51d50c8bcf5f4bb3d_era-residence-garden-2.webp",
+    "srcset": "/assets/6a1571e51d50c8bcf5f4bb3d_era-residence-garden-2-p-500.png 500w, /assets/6a1571e51d50c8bcf5f4bb3d_era-residence-garden-2-p-800.png 800w, /assets/6a1571e51d50c8bcf5f4bb3d_era-residence-garden-2.webp 1920w",
+    "alt": "Outdoor seating with modern chair, ottoman, table, and orange drink in a garden with pink flowers.",
+    "className": "img"
+  },
+  {
+    "lineNo": 2960,
+    "sectionContext": "img-w",
+    "src": "/assets/narayanam/facilities/hotel-front-view.jpg",
+    "srcset": "/assets/6a15723f346e4b3a6c0af26a_era-residence-terrace-p-500.png 500w, /assets/6a15723f346e4b3a6c0af26a_era-residence-terrace-p-800.png 800w, /assets/6a15723f346e4b3a6c0af26a_era-residence-terrace-p-1080.png 1080w, /assets/narayanam/facilities/hotel-front-view.jpg 1920w",
+    "alt": "Sunlit terrace with cushioned seating, wooden tables, plants, flowering vine canopy, and ocean in the distance.",
+    "className": "img"
+  },
+  {
+    "lineNo": 3017,
+    "sectionContext": "img-w",
+    "src": "/assets/narayanam/rooms/room-6.jpg",
+    "srcset": "/assets/6a1507fddb26e71ff717c30c_img_cam_03-p-500.webp 500w, /assets/6a1507fddb26e71ff717c30c_img_cam_03-p-800.webp 800w, /assets/6a1507fddb26e71ff717c30c_img_cam_03-p-1080.webp 1080w, /assets/6a1507fddb26e71ff717c30c_img_cam_03-p-1600.webp 1600w, /assets/narayanam/rooms/room-6.jpg 1920w",
+    "alt": "",
+    "className": "img"
+  },
+  {
+    "lineNo": 3026,
+    "sectionContext": "img-w",
+    "src": "/assets/narayanam/rooms/room-7.jpg",
+    "srcset": "/assets/6a15080748155bc8e151f5ff_img_cam_07-p-500.webp 500w, /assets/6a15080748155bc8e151f5ff_img_cam_07-p-800.webp 800w, /assets/6a15080748155bc8e151f5ff_img_cam_07-p-1080.webp 1080w, /assets/6a15080748155bc8e151f5ff_img_cam_07-p-1600.webp 1600w, /assets/narayanam/rooms/room-7.jpg 1920w",
+    "alt": "",
+    "className": "img"
+  },
+  {
+    "lineNo": 3035,
+    "sectionContext": "img-w",
+    "src": "/assets/narayanam/rooms/room-8.jpg",
+    "srcset": "/assets/6a150812aefa2e544369d4a6_img_cam_09-p-500.webp 500w, /assets/6a150812aefa2e544369d4a6_img_cam_09-p-800.webp 800w, /assets/6a150812aefa2e544369d4a6_img_cam_09-p-1080.webp 1080w, /assets/6a150812aefa2e544369d4a6_img_cam_09-p-1600.webp 1600w, /assets/narayanam/rooms/room-8.jpg 1920w",
+    "alt": "",
+    "className": "img"
+  },
+  {
+    "lineNo": 3044,
+    "sectionContext": "img-w",
+    "src": "/assets/narayanam/dining/dining-spread.jpg",
+    "srcset": "/assets/6a1575180f248400b7124a46_era-residence-kitchen-p-500.webp 500w, /assets/6a1575180f248400b7124a46_era-residence-kitchen-p-800.webp 800w, /assets/6a1575180f248400b7124a46_era-residence-kitchen-p-1080.webp 1080w, /assets/6a1575180f248400b7124a46_era-residence-kitchen-p-1600.webp 1600w, /assets/narayanam/dining/dining-spread.jpg 1920w",
+    "alt": "",
+    "className": "img"
+  },
+  {
+    "lineNo": 3189,
+    "sectionContext": "img-w",
+    "src": "/assets/narayanam/facilities/hotel-exterior-2.webp",
+    "srcset": "/assets/6a0f8994091fd12c24e79c8a_img_cam_02-p-500.png 500w, /assets/6a0f8994091fd12c24e79c8a_img_cam_02-p-800.png 800w, /assets/6a0f8994091fd12c24e79c8a_img_cam_02-p-1080.png 1080w, /assets/narayanam/facilities/hotel-exterior-2.webp 1920w",
+    "alt": "Modern terrace apartments with green plants, flowering vines, and outdoor seating on a sunny day.",
+    "className": "img"
+  },
+  {
+    "lineNo": 3282,
+    "sectionContext": "other-card_info_logo",
+    "src": "/assets/narayanam/logo/logo.webp",
+    "srcset": null,
+    "alt": "Narayanam Hotel",
+    "className": "logo b"
+  },
+  {
+    "lineNo": 3431,
+    "sectionContext": "img-w",
+    "src": "/assets/narayanam/facilities/hotel-front-view.jpg",
+    "srcset": "/assets/6a0f88f3b81e88aabf6874e7_img_cta_1920-p-500.png 500w, /assets/6a0f88f3b81e88aabf6874e7_img_cta_1920-p-800.png 800w, /assets/6a0f88f3b81e88aabf6874e7_img_cta_1920-p-1080.png 1080w, /assets/6a0f88f3b81e88aabf6874e7_img_cta_1920-p-1600.png 1600w, /assets/narayanam/facilities/hotel-front-view.jpg 1920w",
+    "alt": "",
+    "className": "img-p"
+  },
+  {
+    "lineNo": 3988,
+    "sectionContext": "floating-tip-card_img-w",
+    "src": "/assets/narayanam/facilities/hotel-front-view.jpg",
+    "srcset": null,
+    "alt": "Handcrafted Grandeur",
+    "className": "floating-tip-card_img"
+  },
+  {
+    "lineNo": 4045,
+    "sectionContext": "floating-tip-card_img-w",
+    "src": "/assets/narayanam/dining/naivedyam-restaurant.jpg",
+    "srcset": null,
+    "alt": "Naivedyam Pure Veg Fine Dining",
+    "className": "floating-tip-card_img"
+  },
+  {
+    "lineNo": 4102,
+    "sectionContext": "floating-tip-card_img-w",
+    "src": "/assets/narayanam/rooms/royal-suite.jpg",
+    "srcset": null,
+    "alt": "Royal Suites &amp; Rooms",
+    "className": "floating-tip-card_img"
+  },
+  {
+    "lineNo": 4186,
+    "sectionContext": "floating-tip-card_img-w",
+    "src": "/assets/narayanam/facilities/hotel-front-view.jpg",
+    "srcset": null,
+    "alt": "Handcrafted Grandeur",
+    "className": "floating-tip-card_img"
+  },
+  {
+    "lineNo": 4268,
+    "sectionContext": "floating-tip-card_img-w",
+    "src": "/assets/narayanam/dining/naivedyam-restaurant.jpg",
+    "srcset": null,
+    "alt": "Naivedyam Pure Veg",
+    "className": "floating-tip-card_img"
+  },
+  {
+    "lineNo": 4350,
+    "sectionContext": "floating-tip-card_img-w",
+    "src": "/assets/narayanam/rooms/royal-suite.jpg",
+    "srcset": null,
+    "alt": "Royal Suites &amp; Rooms",
+    "className": "floating-tip-card_img"
+  }
+]

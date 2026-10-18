@@ -1,0 +1,238 @@
+{
+  "timestamp": "2026-10-18T11:33:09.765Z",
+  "viewportsTested": 6,
+  "routesTested": 4,
+  "viewportResults": {
+    "1440x900": {
+      "category": "Desktop",
+      "routes": {
+        "Home": {
+          "totalImages": 35,
+          "eraImagesInDom": 0,
+          "eraRequests": 0,
+          "horizontalOverflow": false,
+          "maxScrollWidth": 1440,
+          "consoleErrors": 0
+        },
+        "Rooms_and_Suites": {
+          "totalImages": 31,
+          "eraImagesInDom": 0,
+          "eraRequests": 0,
+          "horizontalOverflow": false,
+          "maxScrollWidth": 1440,
+          "consoleErrors": 0
+        },
+        "Room_Detail_011": {
+          "totalImages": 26,
+          "eraImagesInDom": 0,
+          "eraRequests": 0,
+          "horizontalOverflow": false,
+          "maxScrollWidth": 1440,
+          "consoleErrors": 0
+        },
+        "Contact": {
+          "totalImages": 4,
+          "eraImagesInDom": 0,
+          "eraRequests": 0,
+          "horizontalOverflow": false,
+          "maxScrollWidth": 1440,
+          "consoleErrors": 0
+        }
+      }
+    },
+    "1280x800": {
+      "category": "Laptop",
+      "routes": {
+        "Home": {
+          "totalImages": 35,
+          "eraImagesInDom": 0,
+          "eraRequests": 0,
+          "horizontalOverflow": false,
+          "maxScrollWidth": 1280,
+          "consoleErrors": 0
+        },
+        "Rooms_and_Suites": {
+          "totalImages": 31,
+          "eraImagesInDom": 0,
+          "eraRequests": 0,
+          "horizontalOverflow": false,
+          "maxScrollWidth": 1280,
+          "consoleErrors": 0
+        },
+        "Room_Detail_011": {
+          "totalImages": 26,
+          "eraImagesInDom": 0,
+          "eraRequests": 0,
+          "horizontalOverflow": false,
+          "maxScrollWidth": 1280,
+          "consoleErrors": 0
+        },
+        "Contact": {
+          "totalImages": 4,
+          "eraImagesInDom": 0,
+          "eraRequests": 0,
+          "horizontalOverflow": false,
+          "maxScrollWidth": 1280,
+          "consoleErrors": 0
+        }
+      }
+    },
+    "768x1024": {
+      "category": "Tablet",
+      "routes": {
+        "Home": {
+          "totalImages": 35,
+          "eraImagesInDom": 0,
+          "eraRequests": 0,
+          "horizontalOverflow": false,
+          "maxScrollWidth": 768,
+          "consoleErrors": 1
+        },
+        "Rooms_and_Suites": {
+          "totalImages": 31,
+          "eraImagesInDom": 0,
+          "eraRequests": 0,
+          "horizontalOverflow": false,
+          "maxScrollWidth": 768,
+          "consoleErrors": 0
+        },
+        "Room_Detail_011": {
+          "totalImages": 26,
+          "eraImagesInDom": 0,
+          "eraRequests": 0,
+          "horizontalOverflow": false,
+          "maxScrollWidth": 768,
+          "consoleErrors": 0
+        },
+        "Contact": {
+          "totalImages": 4,
+          "eraImagesInDom": 0,
+          "eraRequests": 0,
+          "horizontalOverflow": false,
+          "maxScrollWidth": 768,
+          "consoleErrors": 0
+        }
+      }
+    },
+    "430x932": {
+      "category": "Mobile Large",
+      "routes": {
+        "Home": {
+          "totalImages": 35,
+          "eraImagesInDom": 0,
+          "eraRequests": 0,
+          "horizontalOverflow": false,
+          "maxScrollWidth": 430,
+          "consoleErrors": 0
+        },
+        "Rooms_and_Suites": {
+          "totalImages": 31,
+          "eraImagesInDom": 0,
+          "eraRequests": 0,
+          "horizontalOverflow": false,
+          "maxScrollWidth": 430,
+          "consoleErrors": 0
+        },
+        "Room_Detail_011": {
+          "totalImages": 26,
+          "eraImagesInDom": 0,
+          "eraRequests": 0,
+          "horizontalOverflow": false,
+          "maxScrollWidth": 430,
+          "consoleErrors": 0
+        },
+        "Contact": {
+          "totalImages": 4,
+          "eraImagesInDom": 0,
+          "eraRequests": 0,
+          "horizontalOverflow": false,
+          "maxScrollWidth": 430,
+          "consoleErrors": 0
+        }
+      }
+    },
+    "390x844": {
+      "category": "Mobile Medium",
+      "routes": {
+        "Home": {
+          "totalImages": 35,
+          "eraImagesInDom": 0,
+          "eraRequests": 0,
+          "horizontalOverflow": false,
+          "maxScrollWidth": 390,
+          "consoleErrors": 0
+        },
+        "Rooms_and_Suites": {
+          "totalImages": 31,
+          "eraImagesInDom": 0,
+          "eraRequests": 0,
+          "horizontalOverflow": false,
+          "maxScrollWidth": 390,
+          "consoleErrors": 0
+        },
+        "Room_Detail_011": {
+          "totalImages": 26,
+          "eraImagesInDom": 0,
+          "eraRequests": 0,
+          "horizontalOverflow": false,
+          "maxScrollWidth": 390,
+          "consoleErrors": 1
+        },
+        "Contact": {
+          "totalImages": 4,
+          "eraImagesInDom": 0,
+          "eraRequests": 0,
+          "horizontalOverflow": false,
+          "maxScrollWidth": 390,
+          "consoleErrors": 0
+        }
+      }
+    },
+    "375x812": {
+      "category": "Mobile Compact",
+      "routes": {
+        "Home": {
+          "totalImages": 35,
+          "eraImagesInDom": 0,
+          "eraRequests": 0,
+          "horizontalOverflow": false,
+          "maxScrollWidth": 375,
+          "consoleErrors": 1
+        },
+        "Rooms_and_Suites": {
+          "totalImages": 31,
+          "eraImagesInDom": 0,
+          "eraRequests": 0,
+          "horizontalOverflow": false,
+          "maxScrollWidth": 375,
+          "consoleErrors": 1
+        },
+        "Room_Detail_011": {
+          "totalImages": 26,
+          "eraImagesInDom": 0,
+          "eraRequests": 0,
+          "horizontalOverflow": false,
+          "maxScrollWidth": 375,
+          "consoleErrors": 0
+        },
+        "Contact": {
+          "totalImages": 4,
+          "eraImagesInDom": 0,
+          "eraRequests": 0,
+          "horizontalOverflow": false,
+          "maxScrollWidth": 375,
+          "consoleErrors": 0
+        }
+      }
+    }
+  },
+  "allEraImagesFound": 0,
+  "allEraRequestsCount": 0,
+  "overflowViolations": 0,
+  "interactions": [
+    {
+      "name": "Hotspot Pin Click (390x844)",
+      "passed": true
+    }
+  ]
+}

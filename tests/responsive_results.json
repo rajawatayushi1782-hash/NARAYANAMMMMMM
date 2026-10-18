@@ -1,0 +1,266 @@
+{
+  "1440x900_desktop": {
+    "hasHorizontalOverflow": false,
+    "maxScrollWidth": 0,
+    "expectedWidth": 1440,
+    "headerInfo": {
+      "hasLogo": true,
+      "logoVisible": false,
+      "logoWidth": 0,
+      "logoHeight": 0
+    },
+    "heroCheck": {
+      "titleFound": true,
+      "titleText": "Narayanam Hotel",
+      "titleRect": {
+        "x": 43.1875,
+        "y": 74.6875,
+        "width": 1353.609375,
+        "height": 174.96875,
+        "top": 74.6875,
+        "right": 1396.796875,
+        "bottom": 249.65625,
+        "left": 43.1875
+      },
+      "imageRect": {
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 961.1875,
+        "top": 0,
+        "right": 1440,
+        "bottom": 961.1875,
+        "left": 0
+      }
+    },
+    "consoleErrorsCount": 0,
+    "failedRequestsCount": 1,
+    "consoleErrors": [],
+    "failedRequests": [
+      {
+        "url": "https://www.google.com/ccm/collect?rcb=9&frm=0&apvc=1&ae=g&auid=993523246.1792321612&dt=Narayanam%20Hotel%20%E2%80%94%20Best%203-Star%20Luxury%20Hotel%20in%20Gwalior%20%7C%20Near%20Kalpi%20Bridge&en=page_view&dl=http%3A%2F%2F127.0.0.1%3A3000%2F&scrsrc=www.googletagmanager.com&rnd=1939029935.1792321612&navt=n&npa=0&ep.ads_data_redaction=0&gtm=45He6ae1v9252215137za200zd9252215137xeaxf1&gcd=13l3l3l3l1l1&dma=0&tag_exp=115938466~115938468~118897920~118897930~120385423~120469145~120469153~121246026~121246034&tft=1792321612178&tfd=5588&fmt=8",
+        "failure": "net::ERR_ABORTED"
+      }
+    ]
+  },
+  "1280x800_laptop": {
+    "hasHorizontalOverflow": false,
+    "maxScrollWidth": 0,
+    "expectedWidth": 1280,
+    "headerInfo": {
+      "hasLogo": true,
+      "logoVisible": false,
+      "logoWidth": 0,
+      "logoHeight": 0
+    },
+    "heroCheck": {
+      "titleFound": true,
+      "titleText": "Narayanam Hotel",
+      "titleRect": {
+        "x": 38.390625,
+        "y": -6684.109375,
+        "width": 1203.21875,
+        "height": 155.53125,
+        "top": -6684.109375,
+        "right": 1241.609375,
+        "bottom": -6528.578125,
+        "left": 38.390625
+      },
+      "imageRect": {
+        "x": -640,
+        "y": -7177.79296875,
+        "width": 2560,
+        "height": 1708.78125,
+        "top": -7177.79296875,
+        "right": 1920,
+        "bottom": -5469.01171875,
+        "left": -640
+      }
+    },
+    "consoleErrorsCount": 0,
+    "failedRequestsCount": 1,
+    "consoleErrors": [],
+    "failedRequests": [
+      {
+        "url": "https://www.google.com/ccm/collect?rcb=16&frm=0&apvc=1&ae=g&auid=305487768.1792321636&dt=Narayanam%20Hotel%20%E2%80%94%20Best%203-Star%20Luxury%20Hotel%20in%20Gwalior%20%7C%20Near%20Kalpi%20Bridge&en=page_view&dl=http%3A%2F%2F127.0.0.1%3A3000%2F&scrsrc=www.googletagmanager.com&rnd=409706630.1792321636&navt=n&npa=0&ep.ads_data_redaction=0&gtm=45He6ae1v9252215137za200zd9252215137xeaxf1&gcd=13l3l3l3l1l1&dma=0&tag_exp=115938466~115938469~117776796~118897920~118897930~120385422~120469145~120469153~121246026~121246034&tft=1792321636079&tfd=5775&fmt=8",
+        "failure": "net::ERR_ABORTED"
+      }
+    ]
+  },
+  "768x1024_tablet": {
+    "hasHorizontalOverflow": false,
+    "maxScrollWidth": 0,
+    "expectedWidth": 768,
+    "headerInfo": {
+      "hasLogo": true,
+      "logoVisible": false,
+      "logoWidth": 0,
+      "logoHeight": 0
+    },
+    "heroCheck": {
+      "titleFound": true,
+      "titleText": "Narayanam Hotel",
+      "titleRect": {
+        "x": 44.296875,
+        "y": 307.46875,
+        "width": 679.390625,
+        "height": 93.3125,
+        "top": 307.46875,
+        "right": 723.6875,
+        "bottom": 400.78125,
+        "left": 44.296875
+      },
+      "imageRect": {
+        "x": 0,
+        "y": 0,
+        "width": 768,
+        "height": 1024,
+        "top": 0,
+        "right": 768,
+        "bottom": 1024,
+        "left": 0
+      }
+    },
+    "consoleErrorsCount": 0,
+    "failedRequestsCount": 1,
+    "consoleErrors": [],
+    "failedRequests": [
+      {
+        "url": "https://www.google.com/ccm/collect?rcb=18&frm=0&apvc=1&ae=g&auid=793581634.1792321651&dt=Narayanam%20Hotel%20%E2%80%94%20Best%203-Star%20Luxury%20Hotel%20in%20Gwalior%20%7C%20Near%20Kalpi%20Bridge&en=page_view&dl=http%3A%2F%2F127.0.0.1%3A3000%2F&scrsrc=www.googletagmanager.com&rnd=492842760.1792321651&navt=n&npa=0&ep.ads_data_redaction=0&gtm=45He6ae1v9252215137za200zd9252215137xeaxf1&gcd=13l3l3l3l1l1&dma=0&tag_exp=115938466~115938469~118897920~118897930~120385422~120469145~120469153~121246026~121246034~121284208&tft=1792321651194&tfd=3919&fmt=8",
+        "failure": "net::ERR_ABORTED"
+      }
+    ]
+  },
+  "430x932_mobile_large": {
+    "hasHorizontalOverflow": false,
+    "maxScrollWidth": 0,
+    "expectedWidth": 430,
+    "headerInfo": {
+      "hasLogo": true,
+      "logoVisible": false,
+      "logoWidth": 0,
+      "logoHeight": 0
+    },
+    "heroCheck": {
+      "titleFound": true,
+      "titleText": "Narayanam Hotel",
+      "titleRect": {
+        "x": 24.796875,
+        "y": 172.140625,
+        "width": 380.40625,
+        "height": 52.21875,
+        "top": 172.140625,
+        "right": 405.203125,
+        "bottom": 224.359375,
+        "left": 24.796875
+      },
+      "imageRect": {
+        "x": 0,
+        "y": 0,
+        "width": 430,
+        "height": 932,
+        "top": 0,
+        "right": 430,
+        "bottom": 932,
+        "left": 0
+      }
+    },
+    "consoleErrorsCount": 0,
+    "failedRequestsCount": 1,
+    "consoleErrors": [],
+    "failedRequests": [
+      {
+        "url": "https://www.google.com/ccm/collect?rcb=15&frm=0&apvc=1&ae=g&auid=216114397.1792321671&dt=Narayanam%20Hotel%20%E2%80%94%20Best%203-Star%20Luxury%20Hotel%20in%20Gwalior%20%7C%20Near%20Kalpi%20Bridge&en=page_view&dl=http%3A%2F%2F127.0.0.1%3A3000%2F&scrsrc=www.googletagmanager.com&rnd=293835543.1792321671&navt=n&npa=0&ep.ads_data_redaction=0&gtm=45He6ae1v9252215137za200zd9252215137xeaxf1&gcd=13l3l3l3l1l1&dma=0&tag_exp=115616985~115938465~115938469~118131808~118897920~118897930~120385423~120469145~120469153~121246026~121246034&tft=1792321670610&tfd=5533&fmt=8",
+        "failure": "net::ERR_ABORTED"
+      }
+    ]
+  },
+  "390x844_mobile_med": {
+    "hasHorizontalOverflow": false,
+    "maxScrollWidth": 0,
+    "expectedWidth": 390,
+    "headerInfo": {
+      "hasLogo": true,
+      "logoVisible": false,
+      "logoWidth": 0,
+      "logoHeight": 0
+    },
+    "heroCheck": {
+      "titleFound": true,
+      "titleText": "Narayanam Hotel",
+      "titleRect": {
+        "x": 22.5,
+        "y": 156.140625,
+        "width": 345,
+        "height": 47.40625,
+        "top": 156.140625,
+        "right": 367.5,
+        "bottom": 203.546875,
+        "left": 22.5
+      },
+      "imageRect": {
+        "x": 0,
+        "y": 0,
+        "width": 390,
+        "height": 844,
+        "top": 0,
+        "right": 390,
+        "bottom": 844,
+        "left": 0
+      }
+    },
+    "consoleErrorsCount": 0,
+    "failedRequestsCount": 1,
+    "consoleErrors": [],
+    "failedRequests": [
+      {
+        "url": "https://www.google.com/ccm/collect?rcb=16&frm=0&apvc=1&ae=g&auid=757531084.1792321685&dt=Narayanam%20Hotel%20%E2%80%94%20Best%203-Star%20Luxury%20Hotel%20in%20Gwalior%20%7C%20Near%20Kalpi%20Bridge&en=page_view&dl=http%3A%2F%2F127.0.0.1%3A3000%2F&scrsrc=www.googletagmanager.com&rnd=1419546678.1792321685&navt=n&npa=0&ep.ads_data_redaction=0&gtm=45He6ae1v9252215137za200zd9252215137xeaxf1&gcd=13l3l3l3l1l1&dma=0&tag_exp=115616985~115938466~115938469~118897920~118897930~120385422~120469145~120469153~121246026~121246034&tft=1792321684751&tfd=2842&fmt=8",
+        "failure": "net::ERR_ABORTED"
+      }
+    ]
+  },
+  "375x812_mobile_small": {
+    "hasHorizontalOverflow": true,
+    "maxScrollWidth": 433,
+    "expectedWidth": 375,
+    "headerInfo": {
+      "hasLogo": true,
+      "logoVisible": false,
+      "logoWidth": 0,
+      "logoHeight": 0
+    },
+    "heroCheck": {
+      "titleFound": true,
+      "titleText": "Narayanam Hotel",
+      "titleRect": {
+        "x": 21.625,
+        "y": 150.140625,
+        "width": 331.75,
+        "height": 45.5625,
+        "top": 150.140625,
+        "right": 353.375,
+        "bottom": 195.703125,
+        "left": 21.625
+      },
+      "imageRect": {
+        "x": 0,
+        "y": 0,
+        "width": 375,
+        "height": 812,
+        "top": 0,
+        "right": 375,
+        "bottom": 812,
+        "left": 0
+      }
+    },
+    "consoleErrorsCount": 0,
+    "failedRequestsCount": 1,
+    "consoleErrors": [],
+    "failedRequests": [
+      {
+        "url": "https://www.google.com/ccm/collect?rcb=8&frm=0&apvc=1&ae=g&auid=865742931.1792321698&dt=Narayanam%20Hotel%20%E2%80%94%20Best%203-Star%20Luxury%20Hotel%20in%20Gwalior%20%7C%20Near%20Kalpi%20Bridge&en=page_view&dl=http%3A%2F%2F127.0.0.1%3A3000%2F&scrsrc=www.googletagmanager.com&rnd=1029467491.1792321698&navt=n&npa=0&ep.ads_data_redaction=0&gtm=45He6ae1v9252215137za200zd9252215137xeaxf1&gcd=13l3l3l3l1l1&dma=0&tag_exp=115938466~115938469~118897920~118897930~120385423~120469145~120469153~121246026~121246034&tft=1792321698528&tfd=2990&fmt=8",
+        "failure": "net::ERR_ABORTED"
+      }
+    ]
+  }
+}

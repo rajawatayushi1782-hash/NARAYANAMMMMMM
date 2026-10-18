@@ -1422,6 +1422,27 @@ a[href^="tel:"] .h2,
     display: none;
   }
 }
+/* ==========================================================================
+   MOBILE & VIEWPORT RESPONSIVENESS: CONTAINER CONTAINMENT & OVERFLOW-X
+   ========================================================================== */
+html, body {
+  overflow-x: clip !important;
+  max-width: 100vw;
+}
 
+.transition-wrapper,
+.transition-container {
+  overflow-x: clip !important;
+  max-width: 100% !important;
+}
 
+.hero-w_bg,
+.hero-w_bg_master {
+  overflow: hidden !important;
+}
 
+@media (max-width: 480px) {
+  .hero-w_bg_master_img {
+    max-width: 100vw !important;
+  }
+}
